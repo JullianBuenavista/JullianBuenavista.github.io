@@ -1,0 +1,22 @@
+/* .wealthbtn {
+    border:1px;
+    border-radius: 5px;
+    background-color: greenyellow;
+} */
+html, body {
+    margin:0;
+    padding:0;
+    height:100vh;
+}
+.page {
+    background-color: lightgrey;
+}
+.quickPages {
+    display:flex;
+    gap:10px;
+}
+.wealthtypes {
+    padding: 20px;
+    background-color:white;
+    
+}
