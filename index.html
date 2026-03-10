@@ -6,6 +6,10 @@
     <title>Main Types of Wealth</title>
     <link rel="stylesheet" href="WealthStyling.css">
 <style>
+body {
+    margin:0;
+    padding:0;
+}
 a:link{
     color:green;
     text-decoration: none;
@@ -16,9 +20,6 @@ a:visited{
 a:hover{
     color:greenyellow;
 }
-.page {
-    background-color: white;
-}
 .quickPages {
     background-color: black;
     margin:0;
@@ -28,55 +29,79 @@ a:hover{
     max-width:1440px;
     max-height:1080px;
 }
+.wealthQuickPages{
+    background-color: black;
+     color:white; 
+     padding:10px; 
+     display:flex; 
+     gap:20px; 
+     height: 50px;
+     font-size: 25px
+}
 .wealthContainer{
     position: relative;
     gap:20px;
-    display:grid;
-    justify-content: space-between;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 1200px;
 }
 .wealthBlocks{
-    flex:1;
+    flex: 1 1 350px;
     background-color: lightgray;
     text-align:center;
     padding: 10px;
     border:1px solid black;
     box-sizing: border-box;
-    flex-basis: 0%;
     border-radius: 10px;
+    display:block;
+}
+.header {
+    margin: 0;
+    padding: 0;
+    color: green;
+    text-align: center;
 }
 </style>
 </head>
 <body>
 <div class="page">
+    <div class="wealthQuickPages">
     <div class="quickPages">
+        <strong>
         <a href="">Home</a>
+        <br>
         <a href="wealthPages/financial.html" class="topBtn" >Financial</a>
         <a href="wealthPages/time.html">Time</a>
         <a href="wealthPages/physical.html">Physical</a>
         <a href="wealthPages/social.html">Social</a>
         <a href="wealthPages/mental.html">Mental</a>
+        </strong>
     </div>
-    <h1>The Main Types Of Wealth</h1>
+    </div>
+    <h1 class="header">The Main Types Of Wealth</h1>
     </div>
     <div class="wealthContainer">
     <a href="wealthPages/financial.html" class="wealthBlocks">
         <h1>Financial Wealth</h1>
-        <p></p>
+        <p>Money and assets</p>
     </a>
     <a href="wealthPages/time.html" class="wealthBlocks">
         <h1>Time Wealth</h1>
+        <p>Freedom and control</p>
     </a>
     <a href="wealthPages/physical.html" class="wealthBlocks">
         <h1>Physical Wealth</h1>
+        <p>Health and Vitality</p>
     </a>
     <a href="wealthPages/social.html" class="wealthBlocks">
         <h1>Social Wealth</h1>
+        <p>Relationships</p>
     </a>
     <a href="wealthPages/mental.html" class="wealthBlocks">
         <h1>Mental Wealth</h1>
+        <p>Purpose and Growth</p>
     </a>
     </div>
 </div>
