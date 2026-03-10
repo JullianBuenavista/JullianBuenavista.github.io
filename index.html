@@ -9,6 +9,8 @@
 body {
     margin:0;
     padding:0;
+    height: 100%;
+    min-height: 100vh;
 }
 a:link{
     color:green;
@@ -25,10 +27,6 @@ a:hover{
     margin:0;
     color: white;
 }
-.page {
-    max-width:1440px;
-    max-height:1080px;
-}
 .wealthQuickPages{
     background-color: black;
      color:white; 
@@ -40,7 +38,7 @@ a:hover{
 }
 .wealthContainer{
     position: relative;
-    gap:20px;
+    gap:50px;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -51,27 +49,54 @@ a:hover{
     flex: 1 1 350px;
     background-color: lightgray;
     text-align:center;
-    padding: 10px;
+    padding: 25px;
     border:1px solid black;
     box-sizing: border-box;
     border-radius: 10px;
     display:block;
+    align-items: center;
 }
 .header {
     margin: 0;
     padding: 0;
     color: green;
     text-align: center;
+    background-color: gold;
+    transition: opacity 1.5s ease-in-out;
+    height: 160px;
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 3s ease-in-out;
+}
+.page:has(#wealthType1:hover) .header {background-image: url('https://cdn.corporatefinanceinstitute.com/assets/money-2.jpeg');}
+.page:has(#wealthType2:hover) .header {background-image: url('');}
+.page:has(#wealthType3:hover) .header {background-image: url('');}
+.page:has(#wealthType4:hover) .header {background-image: url('');}
+.page:has(#wealthType5:hover) .header {background-image: url('');}
+.bottom{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:black;
+    color:green;
+    padding:10px;
 }
 </style>
 </head>
 <body>
-<div class="page">
-    <div class="wealthQuickPages">
-    <div class="quickPages">
-        <strong>
-        <a href="">Home</a>
-        <br>
+    <div class="page">
+        <div class="homePageBackground">
+        <div class="wealthQuickPages">
+            <div class="quickPages">
+                <strong>
+                    <a href="">Home</a>
+                    <br>
         <a href="wealthPages/financial.html" class="topBtn" >Financial</a>
         <a href="wealthPages/time.html">Time</a>
         <a href="wealthPages/physical.html">Physical</a>
@@ -81,30 +106,33 @@ a:hover{
     </div>
     </div>
     <h1 class="header">The Main Types Of Wealth</h1>
-    </div>
     <div class="wealthContainer">
-    <a href="wealthPages/financial.html" class="wealthBlocks">
-        <h1>Financial Wealth</h1>
-        <p>Money and assets</p>
-    </a>
-    <a href="wealthPages/time.html" class="wealthBlocks">
-        <h1>Time Wealth</h1>
-        <p>Freedom and control</p>
-    </a>
-    <a href="wealthPages/physical.html" class="wealthBlocks">
-        <h1>Physical Wealth</h1>
-        <p>Health and Vitality</p>
-    </a>
-    <a href="wealthPages/social.html" class="wealthBlocks">
-        <h1>Social Wealth</h1>
-        <p>Relationships</p>
-    </a>
-    <a href="wealthPages/mental.html" class="wealthBlocks">
-        <h1>Mental Wealth</h1>
-        <p>Purpose and Growth</p>
-    </a>
+        <a id="wealthType1"href="wealthPages/financial.html" class="wealthBlocks">
+            <h1>Financial Wealth</h1>
+            <p>Money and assets</p>
+        </a>
+        <a id="wealthType2" href="wealthPages/time.html" class="wealthBlocks">
+            <h1>Time Wealth</h1>
+            <p>Freedom and control</p>
+        </a>
+        <a id="wealthType3" href="wealthPages/physical.html" class="wealthBlocks">
+            <h1>Physical Wealth</h1>
+            <p>Health and Vitality</p>
+        </a>
+        <a id="wealthType4" href="wealthPages/social.html" class="wealthBlocks">
+            <h1>Social Wealth</h1>
+            <p>Relationships and Connections</p>
+        </a>
+        <a id="wealthType5" href="wealthPages/mental.html" class="wealthBlocks">
+            <h1>Mental Wealth</h1>
+            <p>Purpose and Growth</p>
+        </a>
     </div>
 </div>
 </div>
+</div>
+</div>
+<div class="bottom">hello</div>
 </body>
 </html>
+<!-- social https://images.squarespace-cdn.com/content/v1/656f4e4dababbd7c042c4946/e3152b68-bd23-4631-bbe4-d59aff9c144b/how+to+talk+to+anyone-3x2.jpg -->
