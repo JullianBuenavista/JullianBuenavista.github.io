@@ -21,35 +21,44 @@ a:visited{
     color:green;
 }
 a:hover{
-    color:greenyellow;
+    color:#00C04B;
 }
 .wealthQuickPages{
-    background-color: black;
+    background-color: #A4B8E9;
     color:white; 
     padding:10px; 
     display:flex; 
     gap:20px; 
     height: 50px;
-    font-size: 25px
+    font-size: 25px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 100;
 }
 .bottom{
     position: fixed;
     bottom:0;
     left:0;
     right:0;
-    background-color:black;
+    background-color:#A4B8E9;
     color:green;
     padding:10px;
 }
 .notContactPage{
     text-align: center;
+    color: green;
 }
 p{
     font-size: 25px;
 }
+.page{
+    background-color: #FFFDD0;
+}
 </style>
 </head>
 <body>
+<div class="page">
     <div class="wealthQuickPages">
     <strong>
         <a id="home" href="index.html">Home</a>
@@ -62,7 +71,7 @@ p{
     </strong>
     </div>
 <div class="notContactPage">
-    <h1 style="font-size: 50px ;">Do Not Contact Us</h1>
+    <h1 style="font-size: 50px; margin-top: 65px;">Do Not Contact Us</h1>
     <div>
         <h3 style="font-size: 30px;">We do not recommend contacting us at</h3>
         <p>Email: corporate@gmail.com</p>
@@ -72,6 +81,7 @@ p{
 </div>
 <div class="bottom">
     <a href="doNotContactUs.html">Do Not Contact Us</a>
+</div>
 </div>
 </div>
 </body>

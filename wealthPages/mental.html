@@ -21,23 +21,27 @@ a:visited{
     color:green;
 }
 a:hover{
-    color:greenyellow;
+    color:#00C04B;
 }
 .wealthQuickPages{
-    background-color: black;
+    background-color: #A4B8E9;
     color:white; 
     padding:10px; 
     display:flex; 
     gap:20px; 
     height: 50px;
-    font-size: 25px
+    font-size: 25px;
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 100;
 }
 .bottom{
     position: fixed;
     bottom:0;
     left:0;
     right:0;
-    background-color:black;
+    background-color:#A4B8E9;
     color:green;
     padding:10px;
 }
@@ -64,9 +68,16 @@ a:hover{
     box-sizing: border-box;
     align-items: center;
 }
+.page{
+    background-color: #FFFDD0;
+}
+.wealthContent{
+    color:green;
+}
 </style>
 </head>
 <body>
+<div class="page">
     <div class="wealthQuickPages">
         <strong>
         <a href="../index.html">Home</a>
@@ -78,7 +89,8 @@ a:hover{
         <a href="mental.html">Mental</a>
         </strong>
     </div>
-<h1 style="font-size: 50px ;">Mental Wealth</h1>
+<div class="wealthContent">
+<h1 style="font-size: 50px; margin-top: 65px;">Mental Wealth</h1>
     <div>
         <h3 style="font-size: 30px;">Mental wealth is achieved when:</h3>
         <ul>
@@ -93,5 +105,8 @@ a:hover{
     </div>
 <div class="bottom">
     <a href="../doNotContactUs.html">Do Not Contact Us</a>
-</div></body>
+</div>
+</div>
+</div>
+</body>
 </html>
