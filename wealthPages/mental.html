@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mental Wealth</title>
 <style>
+li{
+    font-size: 25px;
+}
 body {
     margin:0;
     padding:0;
 }
-    a:link{
+a:link{
     color:green;
     text-decoration: none;
 }
@@ -28,11 +31,42 @@ a:hover{
     height: 50px;
     font-size: 25px
 }
+.bottom{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:black;
+    color:green;
+    padding:10px;
+}
+.wealthImages{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    padding: 20px;
+    max-height: 450px;
+    flex-wrap: wrap;
+    margin:20px auto;
+}
+.wealthJPG{
+    height: 200px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 450px;
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+    display:block;
+    box-sizing: border-box;
+    align-items: center;
+}
 </style>
 </head>
 <body>
     <div class="wealthQuickPages">
-    <div class="quickPages">
         <strong>
         <a href="../index.html">Home</a>
         <br>
@@ -43,15 +77,18 @@ a:hover{
         <a href="mental.html">Mental</a>
         </strong>
     </div>
-    </div>
-<h1>Mental Wealth</h1>
+<h1 style="font-size: 50px ;">Mental Wealth</h1>
     <div>
-        <h3>Mental wealth is achieved when:</h3>
+        <h3 style="font-size: 30px;">Mental wealth is achieved when:</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li> a person has a positive mindset</li>
+            <li> a person practices self-care</li>
+            <li> a person maintains emotional balance</li>
         </ul>
     </div>
+    <div class="wealthImages">
+        <img class="wealthJPG" src="https://sourcesofinsight.com/wp-content/uploads/2023/08/What-is-a-Growth-Mindset.jpg" alt="Wealth Image 1" style="width:30%; height:auto; margin-right:10px;">
+        <img class="wealthJPG" src="https://www.aces.edu/wp-content/uploads/2024/08/GettyImages-1003787612-scaled.jpg" alt="Wealth Image 2" style="width:30%; height:auto; margin-right:10px;">    </div>
+<div class="bottom">Contact Us</div>
 </body>
 </html>

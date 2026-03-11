@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Social Wealth</title>
 <style>
+li{
+    font-size: 25px;
+}
 body {
     margin:0;
     padding:0;
@@ -28,11 +31,42 @@ a:hover{
     height: 50px;
     font-size: 25px
 }
+.bottom{
+    position: fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color:black;
+    color:green;
+    padding:10px;
+}
+.wealthImages{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    padding: 20px;
+    max-height: 450px;
+    flex-wrap: wrap;
+    margin:20px auto;
+}
+.wealthJPG{
+    height: 200px;
+    flex: 1;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 450px;
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+    display:block;
+    box-sizing: border-box;
+    align-items: center;
+}
 </style>
 </head>
 <body>
     <div class="wealthQuickPages">
-    <div class="quickPages">
         <strong>
         <a href="../index.html">Home</a>
         <br>
@@ -43,15 +77,19 @@ a:hover{
         <a href="mental.html">Mental</a>
         </strong>
     </div>
-    </div>
-<h1>Social Wealth</h1>
+<h1 style="font-size: 50px ;">Social Wealth</h1>
     <div>
-        <h3>Social wealth is achieved when:</h3>
+        <h3 style="font-size: 30px;">Social wealth is achieved when:</h3>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>high quality relationships are formed</li>
+            <li>deep community trust is developed</li>
+            <li>meaningful connections are maintained</li>
         </ul>
     </div>
+    <div class="wealthImages">
+        <img class="wealthJPG" src="https://www.youngminds.org.uk/media/ppgfmdit/young-person-talking-to-trusted-adult.png?anchor=center&mode=crop&width=1920&height=1080&rnd=133577340548270000&quality=55" alt="Wealth Image 1" style="width:30%; height:auto; margin-right:10px;">
+        <img class="wealthJPG" src="https://www.verywellmind.com/thmb/vw3h09Z6Ed716FqpeLcwMRnVJRg=/2121x0/filters:no_upscale():max_bytes(150000):strip_icc()/TomWerner-6f3ede2425ec41489cd0931d23bd3503.jpg" alt="Wealth Image 2" style="width:30%; height:auto; margin-right:10px;">
+    </div>
+<div class="bottom">Contact Us</div>
 </body>
 </html>
