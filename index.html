@@ -108,16 +108,30 @@ a:hover{
     color:#00C04B;
     padding:10px;
 }
-/* .mobileView{
-    display:none;
+.mobileView{
+    display:block;
+    text-align: center;
+    padding: 50px;
+    color: #00C04B;
 }
 .desktopView{
-    display:block;
-} */
+    display:none;
+}
+@media screen and (min-width: 600px) {
+    .desktopView{
+        display:block;
+    }
+    .mobileView{
+        display:none;
+    }
+}
 </style>
 </head>
 <body>
 <div class="mobileView">
+    <h1>Mobile View Not Supported</h1>
+    <p>Please view this website on a desktop or laptop computer for the best experience.</p>
+</div>
 <div class="desktopView">
     <div class="page">
         <div class="wealthQuickPages">
@@ -159,7 +173,6 @@ a:hover{
 </div>
 <div class="bottom">
     <a href="doNotContactUs.html">Do Not Contact Us</a>
-</div>
 </div>
 </div>
 </div>
