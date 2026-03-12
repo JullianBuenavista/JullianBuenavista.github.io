@@ -72,25 +72,54 @@ a:hover{
 .wealthContent{
     color:green;
 }
+.sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #A4B8E9;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding-top: 80px;
+}
+:target {
+    scroll-margin-top: 75px;
+}
+.page{
+    padding-left: 150px;
+}
+.information{
+    padding-left: 25px;
+}
 </style>
 </head>
 <body>
-<div class="page">
     <div class="wealthQuickPages">
         <strong>
-        <a href="../index.html">Home</a>
-        <br>
-        <a href="financial.html">Financial</a>
-        <a href="time.html">Time</a>
-        <a href="physical.html">Physical</a>
-        <a href="social.html">Social</a>
-        <a href="mental.html">Mental</a>
+            <a href="../index.html">Home</a>
+            <br>
+            <a href="financial.html">Financial</a>
+            <a href="time.html">Time</a>
+            <a href="physical.html">Physical</a>
+            <a href="social.html">Social</a>
+            <a href="mental.html">Mental</a>
         </strong>
     </div>
-<div class="wealthContent">
+    <div class="sideBar">
+        <a href="#Gained">Gained</a>
+        <br>
+        <a href="#Achieving">Achieving</a>
+        <br>
+        <a href="#Avoid">Avoid</a>
+    </div>
+<div class="page">
+    <div class="wealthContent">
 <h1 style="font-size: 50px; margin-top: 65px;">Physical Wealth</h1>
-    <div>
-        <h3 style="font-size: 30px;">Physical wealth is achieved when:</h3>
+    <div class="information">
+        <h3 id="Gained" style="font-size: 30px;">Physical wealth is achieved when:</h3>
         <ul>
             <li>a person has a consistent exercise routine</li>
             <li>a person maintains a balanced diet</li>
@@ -99,7 +128,24 @@ a:hover{
     </div>
     <div class="wealthImages">
         <img class="wealthJPG" src="https://assistinghands.com/34/wp-content/uploads/sites/59/2022/03/Tips-to-Motivate-Seniors-to-Exercise-1024x683.jpeg" alt="Young Man Working Out" style="width:30%; height:auto; margin-right:10px;">
-        <img class="wealthJPG" src="https://boulderpondsseniorliving.com/wp-content/uploads/2024/05/How-Much-Physical-Activity-Do-Older-Adults-Need-Hero-1.jpg" alt="Young Teens Jogging" style="width:30%; height:auto; margin-right:10px;">    </div>
+        <img class="wealthJPG" src="https://boulderpondsseniorliving.com/wp-content/uploads/2024/05/How-Much-Physical-Activity-Do-Older-Adults-Need-Hero-1.jpg" alt="Young Teens Jogging" style="width:30%; height:auto; margin-right:10px;">    
+    </div>
+    <div class="information">
+        <h3 id="Achieving" style="font-size: 30px;">Physical wealth can be achieved by:</h3>
+        <ul>
+            <li>exercising regularly</li>
+            <li>eating a nutritious diet</li>
+            <li>getting adequate rest</li>
+        </ul>
+    </div>
+    <div class="information" style="padding-bottom: 60px;">
+        <h3 id="Avoid" style="font-size: 30px;">Things to avoid:</h3>
+        <ul>
+            <li>leading a sedentary lifestyle</li>
+            <li>consuming excessive junk food</li>
+            <li>neglecting sleep and rest</li>
+        </ul>
+    </div>
 <div class="bottom">
     <a href="../doNotContactUs.html">Do Not Contact Us</a>
 </div>

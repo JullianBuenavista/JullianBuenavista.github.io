@@ -72,34 +72,88 @@ a:hover{
 .wealthContent{
     color:green;
 }
+.sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #A4B8E9;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 30px;
+    padding-top: 80px;
+}
+:target {
+    scroll-margin-top: 75px;
+}
+.imageSide{
+    float:right;
+    margin-right: 30px;
+    border-radius: 15px;
+    border-color: green;
+    border-width: 2px;
+    border-style: solid;
+}
+.page{
+    padding-left: 150px;
+}
+.information{
+    padding-left: 25px;
+}
 </style>
 </head>
 <body>
-<div class="page">
     <div class="wealthQuickPages">
         <strong>
-        <a href="../index.html">Home</a>
-        <br>
-        <a href="financial.html">Financial</a>
-        <a href="time.html">Time</a>
-        <a href="physical.html">Physical</a>
-        <a href="social.html">Social</a>
-        <a href="mental.html">Mental</a>
+            <a href="../index.html">Home</a>
+            <br>
+            <a href="financial.html">Financial</a>
+            <a href="time.html">Time</a>
+            <a href="physical.html">Physical</a>
+            <a href="social.html">Social</a>
+            <a href="mental.html">Mental</a>
         </strong>
     </div>
+    <div class="sideBar">
+        <a href="#Gained">Gained</a>
+        <br>
+        <a href="#Achieving">Achieving</a>
+        <br>
+        <a href="#Avoid">Avoid</a>
+    </div>
+    <div class="page">
 <div class="wealthContent">
 <h1 style="font-size: 50px; margin-top: 65px;">Financial Wealth</h1>
-    <div>
-        <h3 style="font-size: 30px;">Financial wealth is achieved when:</h3>
+    <div class="information">
+        <h3 id="Gained" style="font-size: 30px;">Financial wealth is achieved when:</h3>
         <ul>
             <li>their income covers living expenses and luxuries</li>
             <li>a person has a buffer for emergency expenses</li>
             <li>a person has investments that generate passive income</li>
         </ul>
     </div>
-    <div class="wealthImages">
+    <div class="wealthImages" style="margin-bottom: 110px;">
         <img class="wealthJPG" src="https://www.bridgew.edu/sites/bridgew/files/media/article_featured_image/hundred-dollar-bills-cc-license.jpeg" alt="$100 Dollars Rolled Up" style="width:30%; height:auto; margin-right:10px;">
         <img class="wealthJPG" src="https://wellkeptwallet.com/wp-content/uploads/why-money-is-important.jpeg" alt="$100 Dollars Stacked" style="width:30%; height:auto; margin-right:10px;">
+    </div>
+            <img class="imageSide" src="https://wallpapers.com/images/hd/saud-academy-cash-vertical-100-ct9r4runbobby892.jpg" alt="Financial Growth" style="width: 250px; height: 350px;">
+    <div class="information">
+        <h3 id="Achieving" style="font-size: 30px;">Financial wealth can be achieved by:</h3>
+        <ul>
+            <li>investing early</li>
+            <li>creating multiple income streams</li>
+            <li>living below their means</li>
+        </ul>
+    </div>
+    <div class="information" style="padding-bottom: 60px;">
+        <h3 id="Avoid" style="font-size: 30px;">Things to avoid:</h3>
+        <ul>
+            <li>Accumulating debt</li>
+            <li>Living beyond their means</li>
+            <li>Not saving for emergencies</li>
+        </ul>
     </div>
 <div class="bottom">
     <a href="../doNotContactUs.html">Do Not Contact Us</a>
