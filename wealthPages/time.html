@@ -6,6 +6,9 @@
     <title>Time Wealth Page</title>
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/5_icon.svg/960px-5_icon.svg.png">
 <style>
+html{
+    scroll-behavior: smooth;
+}
 li{
     font-size: 25px;
 }
@@ -94,9 +97,31 @@ a:hover{
 .information{
     padding-left: 25px;
 }
+.mobileView{
+    display:block;
+    text-align: center;
+    padding: 50px;
+    color: #00C04B;
+}
+.desktopView{
+    display:none;
+}
+@media screen and (min-width: 600px) {
+    .desktopView{
+        display:block;
+    }
+    .mobileView{
+        display:none;
+    }
+}
 </style>
 </head>
 <body>
+<div class="mobileView">
+    <h1>Mobile View Not Supported</h1>
+    <p>Please view this website on a desktop or laptop computer for the best experience.</p>
+</div>
+<div class="desktopView">
     <div class="wealthQuickPages">
         <strong>
             <a href="../index.html">Home</a>
@@ -108,13 +133,11 @@ a:hover{
             <a href="mental.html">Mental</a>
         </strong>
     </div>
-    <div class="sideBar">
+    <nav class="sideBar">
         <a href="#Gained">Gained</a>
-        <br>
         <a href="#Achieving">Achieving</a>
-        <br>
         <a href="#Avoid">Avoid</a>
-    </div>
+    </nav>
 <div class="page">
 <div class="wealthContent">
 <h1 style="font-size: 50px; margin-top: 65px;">Time Wealth</h1>
@@ -148,6 +171,7 @@ a:hover{
     </div>
 <div class="bottom">
     <a href="../doNotContactUs.html">Do Not Contact Us</a>
+</div>
 </div>
 </div>
 </div>
