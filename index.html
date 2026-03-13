@@ -62,6 +62,23 @@ a:hover{
     align-items: center;
     font-size:15px;
 }
+.aboutBlock{
+    flex: 1 1 350px;
+    background-color: #0669BF;
+    text-align:center;
+    padding: 25px;
+    border:3px solid #00C04B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display:block;
+    align-items: center;
+    font-size:15px;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    margin-top: 50px;
+}
 .header {
     margin: 0;
     padding: 0;
@@ -97,6 +114,10 @@ a:hover{
 }
 .page:has(#wealthType5:hover, #wealthQuickPages5:hover) .header {
     background-image: url('https://www.jotform.com/blog/wp-content/uploads/2022/02/niko-photos-tGTVxeOr_Rs-unsplash.jpg'); 
+    background-position: center bottom;
+}
+.page:has(#wealthType6:hover, #wealthQuickPages6:hover) .header {
+    background-image: url('https://wallpapers.com/images/hd/question-mark-background-0qdp1p9t198u49em.jpg');
     background-position: center bottom;
 }
 .bottom{
@@ -139,11 +160,12 @@ a:hover{
                 <strong>
                     <a id="home" href="">Home</a>
                     <br>
-        <a id="wealthQuickPages1"href="wealthPages/financial.html" class="topBtn" >Financial</a>
+        <a id="wealthQuickPages1"href="wealthPages/financial.html">Financial</a>
         <a id="wealthQuickPages2" href="wealthPages/time.html">Time</a>
         <a id="wealthQuickPages3" href="wealthPages/physical.html">Physical</a>
         <a id="wealthQuickPages4" href="wealthPages/social.html">Social</a>
         <a id="wealthQuickPages5" href="wealthPages/mental.html">Mental</a>
+        <a id="wealthQuickPages6" href="about.html">About</a>
         </strong>
     </div>
     </div>
@@ -169,6 +191,12 @@ a:hover{
             <h1>Mental Wealth</h1>
             <p>Purpose and Growth</p>
         </a>
+    </div>
+    <div>
+    <a id="wealthType6" href="about.html" class="aboutBlock">
+        <h1>What Is This Based On?</h1>
+        <p>Learn More</p>
+    </a>
     </div>
 </div>
 <div class="bottom">
